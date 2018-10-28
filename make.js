@@ -1,4 +1,4 @@
-export default function make(...makeArgs) {
+module.exports = function make(...makeArgs) {
   const solveArray = [];
   function solve(...solveArgs) {
     if (typeof (solveArgs[0]) === 'function') {
@@ -8,4 +8,4 @@ export default function make(...makeArgs) {
     return solve;
   }
   return solve(...makeArgs);
-}
+};
