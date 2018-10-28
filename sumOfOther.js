@@ -4,4 +4,4 @@ export default function sumOfOther(array) {
     sumArray.push(array.reduce((a, b) => a + b) - element);
   });
   return sumArray;
-};
+}
